@@ -6,6 +6,9 @@ labels: ''
 assignees: ''
 
 ---
+<!--
+Before submitting a report please read the pinned topic(s) first if there is any.
+-->
 
 <!--
 If you are asking a question rather than filing a bug, try one of these instead:
