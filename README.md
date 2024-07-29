@@ -37,6 +37,7 @@ Download and install:
 Download and install:
   * **Latest release**: check [popcorn-time.site](https://popcorn-time.site) or the repo's [releases page](https://github.com/popcorn-official/popcorn-desktop/releases)
   * Or **latest dev build (for testers)**: check the repo's [actions page](https://github.com/popcorn-official/popcorn-desktop/actions)
+  * **Apple Silicon**: If you have Apple Silicon (M-series chips), you need to use the `arm64` release. Apple Silicon apps are required to be signed and notarised with an Apple developer account. So it is necessary to manually remove the quarantine flag: <br> ``` xattr -c "/Applications/Popcorn-Time.app/" ```
 
 Easily install Popcorn Time via _[Homebrew](https://brew.sh) ([Cask](https://docs.brew.sh/Cask-Cookbook)):_
   ~~~ rb
@@ -52,14 +53,6 @@ Also, if you keep a [_Brewfile_](https://github.com/Homebrew/homebrew-bundle#usa
   #ENV["HOMEBREW_POPCORN_TIME_BUILD"] = "false"
   cask "popcorn-time" #, args: { "no-quarantine": true }
   ~~~
-
-#### Apple Silicon:
-
-If you have Apple Silicon (M-series chips), you need to use the `arm64` release. Apple Silicon apps are required to be signed and notarised with an Apple developer account. So it is necessary to manually remove the quarantine flag:
-
-```
-xattr -c "/Applications/Popcorn-Time.app/"
-```
 
 
 ### Linux - Debian/Ubuntu based distros:
